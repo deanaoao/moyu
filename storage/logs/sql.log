@@ -19,3 +19,66 @@
 
 2022/03/17 19:07:33 /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
 [info] replacing callback `gorm:update` from /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+
+2022/03/17 22:20:52 C:/Users/Dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+[info] replacing callback `gorm:update` from C:/Users/Dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+
+2022/03/17 22:32:08 C:/Users/Dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+[info] replacing callback `gorm:update` from C:/Users/Dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+
+2022/03/17 22:32:08 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[28.089ms] [rows:-] SELECT DATABASE()
+
+2022/03/17 22:32:08 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[54.187ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = "gotest" AND table_name = "users" AND table_type = "BASE TABLE"
+
+2022/03/17 22:32:08 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[62.108ms] [rows:0] CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(191) NOT NULL COMMENT "用户名称",`mobile` varchar(191) NOT NULL COMMENT "用户手机号",`password` varchar(191) NOT NULL DEFAULT "" COMMENT "用户密码",`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX idx_users_mobile (`mobile`),INDEX idx_users_deleted_at (`deleted_at`))
+
+2022/03/17 22:44:53 C:/Users/Dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+[info] replacing callback `gorm:update` from C:/Users/Dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+
+2022/03/17 22:44:53 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[28.473ms] [rows:-] SELECT DATABASE()
+
+2022/03/17 22:44:53 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[61.310ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = "gotest" AND table_name = "users" AND table_type = "BASE TABLE"
+
+2022/03/17 22:44:53 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[29.899ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/03/17 22:44:53 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[18.844ms] [rows:-] SELECT DATABASE()
+
+2022/03/17 22:44:53 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[59.877ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = "gotest" AND table_name = "users" AND index_name = "idx_users_mobile"
+
+2022/03/17 22:44:53 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[33.115ms] [rows:-] SELECT DATABASE()
+
+2022/03/17 22:44:53 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[47.731ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = "gotest" AND table_name = "users" AND index_name = "idx_users_deleted_at"
+
+2022/03/17 22:46:15 C:/Users/Dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+[info] replacing callback `gorm:update` from C:/Users/Dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+
+2022/03/17 22:46:15 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[30.476ms] [rows:-] SELECT DATABASE()
+
+2022/03/17 22:46:15 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[70.938ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = "gotest" AND table_name = "users" AND table_type = "BASE TABLE"
+
+2022/03/17 22:46:15 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[27.838ms] [rows:-] SELECT * FROM `users` LIMIT 1
+
+2022/03/17 22:46:15 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[31.491ms] [rows:-] SELECT DATABASE()
+
+2022/03/17 22:46:15 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[45.866ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = "gotest" AND table_name = "users" AND index_name = "idx_users_mobile"
+
+2022/03/17 22:46:15 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[27.020ms] [rows:-] SELECT DATABASE()
+
+2022/03/17 22:46:15 C:/Users/Dean/Desktop/gin_demo/moyu/bootstrap/db.go:108
+[54.717ms] [rows:-] SELECT count(*) FROM information_schema.statistics WHERE table_schema = "gotest" AND table_name = "users" AND index_name = "idx_users_deleted_at"

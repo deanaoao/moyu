@@ -12,6 +12,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
+	"moyu.com/app/models"
 	"moyu.com/global"
 )
 
@@ -52,6 +53,7 @@ func initMySqlGorm() *gorm.DB {
 		sqlDB, _ := db.DB()
 		sqlDB.SetMaxIdleConns(dbConfig.MaxIdleConns)
 		sqlDB.SetMaxOpenConns(dbConfig.MaxOpenConns)
+		initMySqlTables(db)
 		return db
 	}
 }
@@ -99,4 +101,15 @@ func getGormLogWriter() logger.Writer {
 		writer = os.Stdout
 	}
 	return log.New(writer, "\r\n", log.LstdFlags)
+}
+
+// 数据库表初始化
+func initMySqlTables(db *gorm.DB) {
+	err := db.AutoMigrate(
+		models.User{},
+	)
+	if err != nil {
+		global.App.Log.Error("migrate table failed", zap.Any("err", err))
+		os.Exit(0)
+	}
 }

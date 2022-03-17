@@ -13,3 +13,7 @@
 [2022-03-17 18:39:37.034]	local.info	moyu/main.go:17	log init success!
 [2022-03-17 18:39:37.182]	local.error	bootstrap/db.go:49	mysql connect failed, err:	{"err": "Error 1049: Unknown database 'gotest'"}
 [2022-03-17 19:07:33.447]	local.info	moyu/main.go:17	log init success!
+[2022-03-17 22:20:52.893]	local.info	moyu/main.go:17	log init success!
+[2022-03-17 22:32:08.144]	local.info	moyu/main.go:17	log init success!
+[2022-03-17 22:44:53.182]	local.info	moyu/main.go:14	log init success!
+[2022-03-17 22:46:15.506]	local.info	moyu/main.go:14	log init success!

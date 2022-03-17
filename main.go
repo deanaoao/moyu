@@ -1,9 +1,6 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
 	"moyu.com/bootstrap"
 	"moyu.com/global"
 )
@@ -25,14 +22,8 @@ func main() {
 			db.Close()
 		}
 	}()
-
-	r := gin.Default()
-
-	// 测试路由
-	r.GET("/ping", func(c *gin.Context) {
-		c.String(http.StatusOK, "pong")
-	})
-
+	// 初始化验证器
+	bootstrap.InitializeValidator()
 	// 启动服务器
-	r.Run(":" + global.App.Config.App.Port)
+	bootstrap.RunServer()
 }
