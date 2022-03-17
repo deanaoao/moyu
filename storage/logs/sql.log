@@ -1,0 +1,21 @@
+
+2022/03/17 17:17:57 /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+[info] replacing callback `gorm:update` from /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+
+2022/03/17 17:17:58 /Users/dean/Codes/moyu/bootstrap/db.go:45
+[error] failed to initialize database, got error Error 1045: Access denied for user 'root'@'61.242.131.60' (using password: YES)
+
+2022/03/17 17:18:55 /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+[info] replacing callback `gorm:update` from /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+
+2022/03/17 17:18:56 /Users/dean/Codes/moyu/bootstrap/db.go:45
+[error] failed to initialize database, got error Error 1045: Access denied for user 'root'@'61.242.131.60' (using password: YES)
+
+2022/03/17 18:39:37 /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+[info] replacing callback `gorm:update` from /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+
+2022/03/17 18:39:37 /Users/dean/Codes/moyu/bootstrap/db.go:45
+[error] failed to initialize database, got error Error 1049: Unknown database 'gotest'
+
+2022/03/17 19:07:33 /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52
+[info] replacing callback `gorm:update` from /Users/dean/go/pkg/mod/gorm.io/driver/mysql@v1.0.1/mysql.go:52

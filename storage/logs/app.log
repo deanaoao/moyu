@@ -1,0 +1,15 @@
+[2022-03-17 15:37:48.453]	local.info	moyu/main.go:15	log init success!
+[2022-03-17 15:38:41.946]	local.info	moyu/main.go:15	log init success!
+[2022-03-17 16:59:27.923]	local.info	moyu/main.go:15	log init success!
+[2022-03-17 16:59:43.850]	local.info	moyu/main.go:15	log init success!
+[2022-03-17 17:03:17.114]	local.info	moyu/main.go:17	log init success!
+[2022-03-17 17:03:32.440]	local.error	bootstrap/db.go:49	mysql connect failed, err:	{"err": "Error 1045: Access denied for user 'root'@'61.242.131.60' (using password: YES)"}
+[2022-03-17 17:16:44.977]	local.info	moyu/main.go:17	log init success!
+[2022-03-17 17:16:45.330]	local.error	bootstrap/db.go:49	mysql connect failed, err:	{"err": "Error 1045: Access denied for user 'root'@'61.242.131.60' (using password: YES)"}
+[2022-03-17 17:17:57.968]	local.info	moyu/main.go:17	log init success!
+[2022-03-17 17:17:58.289]	local.error	bootstrap/db.go:49	mysql connect failed, err:	{"err": "Error 1045: Access denied for user 'root'@'61.242.131.60' (using password: YES)"}
+[2022-03-17 17:18:55.910]	local.info	moyu/main.go:17	log init success!
+[2022-03-17 17:18:56.234]	local.error	bootstrap/db.go:49	mysql connect failed, err:	{"err": "Error 1045: Access denied for user 'root'@'61.242.131.60' (using password: YES)"}
+[2022-03-17 18:39:37.034]	local.info	moyu/main.go:17	log init success!
+[2022-03-17 18:39:37.182]	local.error	bootstrap/db.go:49	mysql connect failed, err:	{"err": "Error 1049: Unknown database 'gotest'"}
+[2022-03-17 19:07:33.447]	local.info	moyu/main.go:17	log init success!
